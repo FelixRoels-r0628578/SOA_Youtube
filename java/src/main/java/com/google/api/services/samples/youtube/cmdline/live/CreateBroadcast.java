@@ -66,13 +66,13 @@ public class CreateBroadcast {
             // times for the broadcast. Currently, those times are hard-coded.
             LiveBroadcastSnippet broadcastSnippet = new LiveBroadcastSnippet();
             broadcastSnippet.setTitle(title);
-            broadcastSnippet.setScheduledStartTime(new DateTime("2024-01-30T00:00:00.000Z"));
-            broadcastSnippet.setScheduledEndTime(new DateTime("2024-01-31T00:00:00.000Z"));
+            broadcastSnippet.setScheduledStartTime(new DateTime("2019-10-31T16:35:00.000Z"));
+            broadcastSnippet.setScheduledEndTime(new DateTime("2019-10-31T16:40:00.000Z"));
 
             // Set the broadcast's privacy status to "private". See:
             // https://developers.google.com/youtube/v3/live/docs/liveBroadcasts#status.privacyStatus
             LiveBroadcastStatus status = new LiveBroadcastStatus();
-            status.setPrivacyStatus("private");
+            status.setPrivacyStatus("public");
 
             LiveBroadcast broadcast = new LiveBroadcast();
             broadcast.setKind("youtube#liveBroadcast");
